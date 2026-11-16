@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tharini Naveen® | Full-stack &amp; AI Engineer</title>
+<meta name="theme-color" content="#110a13">
+<script>try{const t=localStorage.getItem("tn-theme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.dataset.theme=t}catch(_){}</script>
+<meta name="description" content="Tharini Naveen, full-stack developer and AI/ML engineer from Mysuru. Selected projects, toolbox and contact.">
+<meta property="og:title" content="Tharini Naveen | Full-stack & AI Engineer">
+<meta property="og:description" content="Full-stack engineering, applied machine learning, and the space between logic and imagination.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='19' fill='%23310A31'/%3E%3Cpath d='M11 20h42M32 20v26' stroke='%23F4ECD6' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@900&family=JetBrains+Mono:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- intro: loader mark, then a halftone burst that floods into the page -->
+<canvas id="intro" aria-hidden="true"></canvas>
+<div id="intro-mark" class="intro-mark" aria-hidden="true"><span class="intro-star">✳</span><span class="intro-dot"></span></div>
+
+<!-- liquid ink cursor -->
+<canvas id="ink" aria-hidden="true"></canvas>
+<canvas id="ink-tint" aria-hidden="true"></canvas>
+<div aria-hidden="true" class="cursor-dot" id="cursor-dot"><span>EXPLORE ↗</span></div>
+<div aria-hidden="true" class="grain"></div>
+
+<header class="site-header" id="site-header">
+  <a aria-label="Tharini Naveen, home" class="brand magnetic" href="#top">
+    <span class="brand-emblem">✳</span>
+    <span class="brand-text">THARINI NAVEEN<span class="brand-period">.</span><small>DESIGN-MINDED DEVELOPER</small></span>
+  </a>
+  <nav aria-label="Main navigation" class="nav-links">
+    <a class="magnetic" href="#work">WORK <span>↗</span></a>
+    <a class="magnetic" href="#about">ABOUT <span>↗</span></a>
+    <a class="magnetic" href="#contact">CONTACT <span>↗</span></a>
+  </nav>
+  <div class="header-right">
+    <span class="availability"><i></i> AVAILABLE FOR OPPORTUNITIES</span>
+    <button aria-label="Switch to light theme" aria-pressed="false" class="theme-toggle magnetic" id="theme-toggle" type="button">
+      <span class="theme-toggle-track"><span aria-hidden="true" class="theme-icon sun">☼</span><span aria-hidden="true" class="theme-icon moon">☾</span><span aria-hidden="true" class="theme-toggle-knob"></span></span>
+      <span class="theme-label">DARK</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero-x" id="top" aria-labelledby="hero-name">
+    <h1 class="sr-only" id="hero-name">Tharini Naveen, full-stack developer and AI/ML engineer</h1>
+    <div class="hero-title" id="hero-title" aria-hidden="true"><canvas id="title-gl"></canvas></div>
+    <div class="hero-sub">
+      <span>FULL-STACK DEVELOPER &amp; AI/ML ENGINEER, BUILDING FROM MYSURU.</span>
+      <span>B.E. CSE (AI &amp; ML) · CGPA 8.72 · CLASS OF 2027</span>
+    </div>
+    <div class="rig-stage" id="rig-stage" role="button" tabindex="0" aria-label="Console 1 of 3. Activate to switch console.">
+      <div class="rig-float"><div class="rig-tilt" id="rig-tilt"></div></div>
+      <div class="rig-shadow" aria-hidden="true"></div>
+    </div>
+    <div class="hero-foot">
+      <div class="hero-summary">
+        <span class="superstar" aria-hidden="true">✳</span>
+        <p>I build thoughtful digital experiences where <em>intelligence</em> meets <em>imagination.</em></p>
+      </div>
+      <a class="hero-scroll magnetic" href="#work" aria-label="Scroll to selected work"><span>↓</span></a>
+      <div class="rig-caption" aria-hidden="true">
+        <span>RIG <b id="rig-caption-num">01 / 03</b> · <b id="rig-caption-name">POCKET</b></span>
+        <small>CLICK THE CONSOLE TO SWITCH ↗</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK -->
+  <section aria-labelledby="work-title" class="work-x section-shell" id="work">
+    <div class="section-head reveal">
+      <div class="section-head-left">
+        <span class="eyebrow"><span class="tiny-circle">●</span> 01 / THE PROOF IS IN THE PROJECTS</span>
+        <h2 id="work-title">SELECTED <span class="editorial">work.</span></h2>
+      </div>
+      <div class="section-head-right">
+        <p>Ideas taken from messy first sketches to something you can actually use.</p>
+        <span>2024 TO PRESENT / 09 PROJECTS</span>
+      </div>
+    </div>
+    <div class="work-grid" id="work-grid"></div>
+    <div class="work-outro reveal">
+      <span>↳ THERE'S ALWAYS SOMETHING ELSE IN PROGRESS.</span>
+      <a class="inline-link magnetic" href="https://github.com/thorrwho?tab=repositories" rel="noopener noreferrer" target="_blank">MORE ON GITHUB <span>↗</span></a>
+    </div>
+  </section>
+
+  <!-- A LITTLE LESS ORDINARY: pinned, uncovered from beneath, then covered by the next page -->
+  <div class="pin pin-philosophy">
+    <section aria-labelledby="glass-title" class="glass-interlude pin-stage">
+      <div class="glass-glow"></div>
+      <div aria-hidden="true" class="glass-ribbons" id="glass-ribbons"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="interlude-top"><span>02 / A LITTLE PHILOSOPHY</span><span>LOGIC × INSTINCT</span></div>
+      <div class="philo-panel">
+        <div class="philo-panel-ribbons" aria-hidden="true"></div>
+        <h2 id="glass-title">A LITTLE<br><em>less ordinary.</em></h2>
+        <p>Built to work. Designed to be remembered.</p>
+      </div>
+      <div class="interlude-bottom"><span>BUILT WITH CURIOSITY</span><span>✳ DRAG YOUR EYES AROUND</span></div>
+    </section>
+  </div>
+
+  <!-- MORE THAN CODE -->
+  <section aria-labelledby="about-title" class="about section-shell over" id="about">
+    <div class="section-head reveal">
+      <div class="section-head-left">
+        <span class="eyebrow"><span class="tiny-circle">●</span> 03 / THE PERSON BEHIND THE PIXELS</span>
+        <h2 id="about-title">MORE THAN <span class="editorial">code.</span></h2>
+      </div>
+      <div class="section-head-right"><p>Engineer, learner, collaborator, and a firm believer in figuring things out by making them.</p></div>
+    </div>
+    <div class="about-layout">
+      <div class="about-main reveal">
+        <span class="about-star">✳</span>
+        <p>I'm <strong>Tharini Naveen</strong>, a Computer Science Engineering student specializing in AI &amp; ML at Vidyavardhaka College of Engineering, Mysuru.</p>
+        <p>My sweet spot is the intersection of <em>useful engineering</em> and <em>unexpectedly good experiences</em>, from full-stack platforms to RAG pipelines and applied machine learning.</p>
+        <div class="about-buttons">
+          <a class="pill-link magnetic" download href="assets/Tharini_Naveen_Resume.pdf">DOWNLOAD RÉSUMÉ <span>↓</span></a>
+          <a class="pill-link pill-outline magnetic" href="https://www.linkedin.com/in/tharini-naveen-217335275" rel="noopener noreferrer" target="_blank">LINKEDIN ↗</a>
+        </div>
+      </div>
+      <div class="about-details">
+        <div class="about-stat reveal"><small>THE NUMBERS / 001</small><b>8.72<span>/10</span></b><span>ACADEMIC CGPA</span></div>
+        <div class="about-stat reveal"><small>THE NUMBERS / 002</small><b>2027<span>↗</span></b><span>EXPECTED GRADUATION</span></div>
+        <div class="about-timeline reveal">
+          <div><span>NOW / 2026</span><strong>Full-Stack Developer · Freelance</strong><small>FairMesh, a grocery loyalty platform</small></div>
+          <div><span>BEYOND THE SCREEN</span><strong>Creative Director · Astronomy Club</strong><small>Machine-learning peer tutor &amp; robotics club member</small></div>
+          <div><span>A LITTLE WIN</span><strong>CodeStorm 2025 · 2nd Runner-Up</strong><small>Building, learning, collaborating</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE THINGS I WORK WITH: pinned the same way -->
+  <div class="pin pin-toolbox">
+    <section aria-labelledby="skills-title" class="capabilities section-shell pin-stage">
+      <div class="capabilities-inner">
+        <div class="skills-intro reveal">
+          <span class="eyebrow">04 / MY TOOLBOX</span>
+          <h2 id="skills-title">THE THINGS<br>I <em>work with.</em></h2>
+        </div>
+        <div class="skills-groups">
+          <div class="skill-group reveal"><span>01 / FRONTEND</span><div>React <i>✳</i> TypeScript <i>✳</i> JavaScript <i>✳</i> Tailwind CSS <i>✳</i> Vite</div></div>
+          <div class="skill-group reveal"><span>02 / BACKEND</span><div>Python <i>✳</i> FastAPI <i>✳</i> Node.js <i>✳</i> Express <i>✳</i> MongoDB</div></div>
+          <div class="skill-group reveal"><span>03 / INTELLIGENCE</span><div>Machine Learning <i>✳</i> LangChain <i>✳</i> RAG <i>✳</i> ChromaDB <i>✳</i> LLMs</div></div>
+          <div class="skill-group reveal"><span>04 / BUILD &amp; SHIP</span><div>Git <i>✳</i> Docker <i>✳</i> Vercel <i>✳</i> Render <i>✳</i> Google Cloud</div></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- LET'S MAKE IT HAPPEN -->
+  <section aria-labelledby="contact-title" class="contact over" id="contact">
+    <div class="contact-glow"></div>
+    <div aria-hidden="true" class="contact-hand-scene" id="contact-hand-scene">
+      <div class="hand-glow"></div>
+      <svg class="contact-hand-svg" viewBox="0 0 340 440" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="glove" x1=".18" x2=".88" y1="1" y2="0"><stop stop-color="#4B245E"/><stop offset=".46" stop-color="#A885BD"/><stop offset=".8" stop-color="#D7B5D8"/><stop offset="1" stop-color="#FEF0E8"/></linearGradient>
+          <linearGradient id="finger" x1="0" x2=".9" y1="1" y2="0"><stop stop-color="#6B427C"/><stop offset=".56" stop-color="#CBA7D7"/><stop offset="1" stop-color="#F9E4EB"/></linearGradient>
+          <radialGradient id="shine"><stop stop-color="#EECFE7" stop-opacity=".85"/><stop offset="1" stop-color="#EECFE7" stop-opacity="0"/></radialGradient>
+        </defs>
+        <ellipse cx="190" cy="350" fill="#CBA7DA" opacity=".1" rx="132" ry="38"/>
+        <g class="hand-arm"><path d="M118 426 Q100 355 120 304 L245 278 Q240 365 266 430" fill="url(#glove)" stroke="#482455" stroke-width="4"/><path d="M133 388 Q188 409 251 377" fill="none" opacity=".3" stroke="#F5DAEC" stroke-width="5"/></g>
+        <g class="hand-gesture">
+          <g class="hand-finger finger-one"><path d="M120 232 C90 202 68 157 91 141 C109 131 122 151 138 172 L179 209" fill="url(#finger)" stroke="#60316A" stroke-width="4"/><path d="M94 149 Q111 177 137 191" fill="none" opacity=".45" stroke="#F7DDEC" stroke-width="5"/></g>
+          <g class="hand-finger finger-two"><path d="M145 214 C135 179 119 118 143 111 C164 106 172 136 185 170 L207 210" fill="url(#finger)" stroke="#60316A" stroke-width="4"/><path d="M148 124 Q165 159 178 189" fill="none" opacity=".5" stroke="#F9E7F4" stroke-width="5"/></g>
+          <g class="hand-finger finger-three"><path d="M173 213 C168 181 166 99 193 99 C215 100 212 145 219 187 L229 217" fill="url(#finger)" stroke="#60316A" stroke-width="4"/><path d="M194 114 Q196 154 202 180" fill="none" opacity=".5" stroke="#FDEAF3" stroke-width="5"/></g>
+          <g class="hand-finger finger-four"><path d="M201 227 C215 186 235 129 258 145 C276 158 244 200 243 233" fill="url(#finger)" stroke="#60316A" stroke-width="4"/><path d="M251 157 Q239 184 229 204" fill="none" opacity=".5" stroke="#FDEAF3" stroke-width="5"/></g>
+          <path d="M114 231 Q136 204 170 211 Q215 206 247 231 C271 254 258 318 234 350 Q192 375 146 349 Q106 319 110 271 Z" fill="url(#glove)" stroke="#60316A" stroke-width="4"/>
+          <g class="hand-thumb"><path d="M117 269 C81 262 50 225 37 248 C24 276 70 318 119 312 Q133 285 117 269 Z" fill="url(#finger)" stroke="#60316A" stroke-width="4"/><path d="M46 253 Q65 276 96 289" fill="none" opacity=".35" stroke="#FFF1ED" stroke-width="6"/></g>
+          <ellipse cx="183" cy="275" fill="url(#shine)" opacity=".8" rx="63" ry="68"/>
+          <path d="M135 317 Q180 344 226 307" fill="none" opacity=".28" stroke="#F3DDF3" stroke-width="4"/>
+        </g>
+        <g class="hand-spark"><path d="M285 89 L294 116 L319 126 L293 134 L281 159 L273 130 L251 119 L275 112 Z" fill="#E8C4D8"/><circle cx="77" cy="110" fill="#D4B2E0" r="6"/><circle cx="312" cy="226" fill="#F5C8E9" r="4"/></g>
+      </svg>
+      <div class="hand-note">GO ON, SAY HELLO <span>✳</span></div>
+    </div>
+    <div class="contact-top"><span>05 / THE NEXT GREAT THING STARTS HERE</span><span>MYSURU, INDIA · OPEN TO REMOTE</span></div>
+    <p class="contact-kicker reveal">GOT AN IDEA? A QUESTION? A REALLY GOOD PROBLEM?</p>
+    <h2 class="reveal" id="contact-title">LET'S MAKE<br><span>IT <em>happen.</em></span></h2>
+    <a class="contact-action magnetic" href="mailto:tharininaveen05@gmail.com?subject=Let's%20build%20something">START A CONVERSATION <span>↗</span></a>
+    <div class="contact-links">
+      <a href="mailto:tharininaveen05@gmail.com">EMAIL ↗</a>
+      <a href="https://github.com/thorrwho" rel="noopener noreferrer" target="_blank">GITHUB ↗</a>
+      <a href="https://www.linkedin.com/in/tharini-naveen-217335275" rel="noopener noreferrer" target="_blank">LINKEDIN ↗</a>
+      <a href="#top">BACK TO TOP ↑</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 THARINI NAVEEN. HANDMADE FOR THE WEB.</span>
+  <span>DESIGNED TO FEEL DIFFERENT <span class="footer-star">✳</span></span>
+  <span id="local-time">IST / INDIA</span>
+</footer>
+
+<!-- project viewer: the clicked console flies forward and shows the project on its screen -->
+<div class="vw" id="viewer" hidden>
+  <div class="vw-backdrop" data-vw-close></div>
+  <div class="vw-stage">
+    <div class="vw-fly" id="vw-fly" role="dialog" aria-modal="true" aria-labelledby="vw-title">
+      <div class="vw-tilt" id="vw-tilt">
+        <div class="cx cx-xl" id="vw-cx">
+          <div class="cx-face">
+            <div class="cx-topline"><span id="vw-code">TN // PROJECT</span><span class="cx-led"></span></div>
+            <div class="cx-screen vw-screen">
+              <div class="cx-bar"><span class="cx-rig" id="vw-cat"></span><span class="cx-metric" id="vw-metric"></span></div>
+              <div class="vw-body" id="vw-body" tabindex="0" data-native-scroll></div>
+              <div class="cx-bar cx-bar-bottom vw-hint" id="vw-hint"></div>
+              <div class="cx-glass" aria-hidden="true"></div>
+            </div>
+            <div class="vw-controls">
+              <div class="vw-dpad" role="group" aria-label="Direction pad">
+                <span class="vw-dpad-cross" aria-hidden="true"></span>
+                <button type="button" data-dir="up" aria-label="Up">▲</button>
+                <button type="button" data-dir="left" aria-label="Previous">◀</button>
+                <button type="button" data-dir="right" aria-label="Next">▶</button>
+                <button type="button" data-dir="down" aria-label="Down">▼</button>
+              </div>
+              <div class="vw-mid" aria-hidden="true">
+                <div class="cx-pins"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="vw-pills"><span>SELECT</span><span>START</span></div>
+              </div>
+              <div class="vw-ab">
+                <div class="vw-key vw-key-b"><button class="vw-btn vw-b" id="vw-close" type="button" aria-label="Close project">✕</button><small>B · CLOSE</small></div>
+                <div class="vw-key vw-key-a"><a class="vw-btn vw-a" id="vw-open" target="_blank" rel="noopener noreferrer">↗</a><small id="vw-open-label">A · GITHUB</small></div>
+              </div>
+            </div>
+            <div class="cx-speaker" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <canvas class="vw-mosaic" id="vw-mosaic" aria-hidden="true"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/fluid.js"></script>
+<script src="js/screens.js"></script>
+<script src="js/consoles.js"></script>
+<script src="js/main.js"></script>
+<script src="js/viewer.js"></script>
+<script src="js/hero.js"></script>
+</body>
+</html>
